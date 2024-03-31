@@ -21,9 +21,6 @@ git clone https://github.com/RyanTmi/M1-TP_EDP.git
 
 To use this repository effectively, it is necessary to also install the [pyde_fem](https://github.com/RyanTmi/pyde_fem) Python package that the practical works utilize. The package is currently in the testing phase and is hosted on PyPI Test.
 
-To use this repository effectively, it is necessary to also install the Python package that the practical works utilize.
-The package is currently in the testing phase and is hosted on PyPI Test.
-
 You can install the package using pip with the following command:
 
 ```shell
