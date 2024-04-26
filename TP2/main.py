@@ -3,7 +3,7 @@ import pyde_fem as pf
 
 
 def main() -> None:
-    mesh_file = 'assets/mesh1.msh'
+    mesh_file = "assets/mesh1.msh"
 
     vertices, indices = pf.mesh.load(mesh_file)
 
@@ -13,5 +13,5 @@ def main() -> None:
     pf.mesh.plot(vertices, indices, values=values)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

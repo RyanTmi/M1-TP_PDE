@@ -28,11 +28,11 @@ def main() -> None:
     x = np.linspace(-1, 1, 1000)
 
     plt.subplot(2, 2, (1, 2))
-    plt.plot(x, df(x), label='f\'(x)')
-    plt.plot(x, dfp(x, h), label='dfp(x)')
-    plt.plot(x, dfm(x, h), label='dfm(x)')
-    plt.plot(x, df0(x, h), label='df0(x)')
-    plt.xlabel('x')
+    plt.plot(x, df(x), label="f'(x)")
+    plt.plot(x, dfp(x, h), label="dfp(x)")
+    plt.plot(x, dfm(x, h), label="dfm(x)")
+    plt.plot(x, df0(x, h), label="df0(x)")
+    plt.xlabel("x")
     plt.legend()
 
     # -------- Question 2 --------
@@ -41,9 +41,9 @@ def main() -> None:
     z = np.max(y, axis=1)
 
     plt.subplot(2, 2, 3)
-    plt.plot(hs, z, label='max|f\'-dfp|')
+    plt.plot(hs, z, label="max|f'-dfp|")
     # plt.plot(hs, 20 * hs)
-    plt.xlabel('h')
+    plt.xlabel("h")
     plt.legend()
 
     # -------- Question 3 --------
@@ -51,14 +51,14 @@ def main() -> None:
     z = np.max(y, axis=1)
 
     plt.subplot(2, 2, 4)
-    plt.plot(hs, z, label='max|f\'-df0|')
+    plt.plot(hs, z, label="max|f'-df0|")
     # plt.plot(hs, 40 * hs**2)
-    plt.xlabel('h')
+    plt.xlabel("h")
     plt.grid(True)
     plt.legend()
 
     plt.show()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
