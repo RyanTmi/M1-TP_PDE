@@ -60,11 +60,11 @@ def profile(mesh_file: str) -> None:
         times["boundary"].append(t)
         print(f"Boundary created in {t:0.6f} seconds")
 
-        cc, t = profile_func(pf.mesh.connected_component, indices)
+        _, t = profile_func(pf.mesh.connected_component, indices)
         times["connected_component"].append(t)
         print(f"Connected component created in {t:0.6f} seconds")
 
-        ccb, t = profile_func(pf.mesh.connected_component, bi)
+        _, t = profile_func(pf.mesh.connected_component, bi)
         times["boundary_connected_component"].append(t)
         print(f"Boundary connected component created in {t:0.6f} seconds")
     print()
@@ -92,7 +92,7 @@ def main() -> None:
             print(f"Refined x{i + 1} mesh in {t2 - t1:0.6f} seconds")
 
         t1 = time.perf_counter()
-        bi, be2e = pf.mesh.boundary(indices)
+        bi, _ = pf.mesh.boundary(indices)
         t2 = time.perf_counter()
         print(f"Boundary created in {t2 - t1:0.6f} seconds")
 
@@ -108,7 +108,15 @@ def main() -> None:
 
         values = np.cos(4 * np.pi * vertices.dot(d))
 
-        pf.mesh.plot(vertices, indices, indices_b=bi, cc=cc, ccb=ccb)
+        pf.mesh.plot(
+            vertices,
+            indices,
+            boundary_indices=bi,
+            connected_components=cc,
+            boundary_connected_components=ccb,
+            values=values,
+        )
+        plt.show()
 
 
 if __name__ == "__main__":

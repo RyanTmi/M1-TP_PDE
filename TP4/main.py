@@ -55,8 +55,7 @@ def error(p: int, mu: float) -> None:
     plt.figure("Error", figsize=(9, 6))
     plt.xlabel("h")
     plt.ylabel("error")
-    plt.xscale("log")
-    plt.yscale("log")
+    plt.loglog()
     plt.plot(h, y)
     plt.show()
 
@@ -107,8 +106,7 @@ def error_dirichlet(p: int, mu: float) -> None:
     plt.figure("Error", figsize=(9, 6))
     plt.xlabel("h")
     plt.ylabel("error")
-    plt.xscale("log")
-    plt.yscale("log")
+    plt.loglog()
     plt.plot(h, y)
     plt.show()
 
