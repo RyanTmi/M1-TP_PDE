@@ -6,10 +6,14 @@ These practical works are designed to aid in understanding and applying numerica
 
 ## Contents
 
-- **TP1:** Reminders on Python
-- **TP2:** Mesh management
-- **TP3:** Boundary and connected components
-- **TP4:** 1D finite elements
+- **tp1:** Reminders on Python.
+- **tp2:** Mesh management.
+- **tp3:** Boundary and connected components.
+- **tp4:** 1D finite elements.
+- **tp5:** Mass and stiffness.
+- **tp6:** Neumann/Dirichlet boundary value problem.
+
+- **project:** Approximation of solutions with poor regularity.
 
 ## Getting Started
 
