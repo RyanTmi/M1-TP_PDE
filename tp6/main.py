@@ -6,7 +6,7 @@ import scipy.linalg
 
 
 def main() -> None:
-    vtx, elt = pf.mesh.generate("assets/rectangle.msh", 10, 10, 2 * np.pi, np.pi)
+    vtx, elt = pf.mesh.generate(10, 10, 2 * np.pi, np.pi, "assets/rectangle.msh")
     belt, _ = pf.mesh.boundary(elt)
     bn = pf.mesh.boundary_normals(vtx, belt)
 

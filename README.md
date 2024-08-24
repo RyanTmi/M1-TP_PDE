@@ -1,6 +1,6 @@
 # Approximation of Elliptic PDEs and Numerical Simulation
 
-This repository contains a collection of practical exercises for the course [Approximation of elliptic PDEs and numerical simulation](https://moodle-sciences-23.sorbonne-universite.fr/course/view.php?id=3893) in the Master 1 of Applied Mathematics at Sorbonne University.
+This repository contains a collection of practical exercises for the course **Approximation of elliptic PDEs and numerical simulation** in the Master 1 of Applied Mathematics at Sorbonne University.
 
 These practical works are designed to aid in understanding and applying numerical methods for approximating solutions to elliptic partial differential equations (PDEs) and simulating them computationally.
 
@@ -12,7 +12,6 @@ These practical works are designed to aid in understanding and applying numerica
 - **tp4:** 1D finite elements.
 - **tp5:** Mass and stiffness.
 - **tp6:** Neumann/Dirichlet boundary value problem.
-
 - **project:** Approximation of solutions with poor regularity.
 
 ## Getting Started
@@ -23,12 +22,13 @@ To get started with these practical works, clone this repository to your local m
 git clone https://github.com/RyanTmi/M1-TP_EDP.git
 ```
 
-To use this repository effectively, it is necessary to also install the [pyde_fem](https://github.com/RyanTmi/pyde_fem) Python package that the practical works utilize. The package is currently in the testing phase and is hosted on PyPI Test.
+To use this repository effectively, it is necessary to also install the [pyde-fem](https://github.com/RyanTmi/pyde-fem)
+Python package that the practical works utilize.
 
 You can install the package using pip with the following command:
 
 ```shell
-pip install -i https://test.pypi.org/simple/ pyde-fem
+pip install pyde-fem
 ```
 
 Make sure to install the package before proceeding with the practical works to ensure smooth execution.
